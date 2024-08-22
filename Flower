@@ -1,0 +1,126 @@
+import turtle
+import colorsys
+shrey=turtle.Turtle()
+shrey.speed(0)
+shrey.screen.bgcolor("black")
+def flower():
+    shrey.color("white")
+    shrey.fillcolor()
+    shrey.begin_fill()
+    shrey.circle(100,90)
+    shrey.left(90)
+    shrey.circle(100,90)
+    shrey.end_fill()
+shrey.right(90)
+shrey.color("white")
+shrey.fillcolor("green")
+shrey.forward(300)
+shrey.left(90)
+shrey.forward(10)
+shrey.left(90)
+shrey.forward(300)
+shrey.left(90)
+shrey.forward(10)
+shrey.end_fill()
+
+shrey.left(90)
+shrey.forward(300)
+shrey.right(135)
+shrey.forward(50)
+flower()
+shrey.right(90)
+shrey.pensize(3)
+shrey.forward(50)
+shrey.left(45)
+shrey.forward(10)
+shrey.left(60)
+
+shrey.pensize(1)
+shrey.forward(80)
+shrey.right(60)
+flower()
+shrey.pensize(3)
+shrey.right(30)
+shrey.forward(80)
+
+shrey.pensize(1)
+shrey.right(150)
+shrey.forward(300)
+shrey.left(60)
+
+h=0.1
+
+for i in range(140):
+    c=colorsys.hsv_to_rgb(h,1,1)
+    h +=0.004
+    shrey.fillcolor(c)
+    shrey.begin_fill()
+    shrey.circle(150-i,90)
+    shrey.left(20)
+    shrey.left(90)
+    shrey.circle(150-i,90)
+    shrey.right(80)
+    shrey.end_fill()
+
+shrey.done()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
